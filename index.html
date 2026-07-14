@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="La Indonesian – Catering Sehat bergizi untuk seluruh wilayah Indonesia. Segera hadir! Daftar sekarang dan dapatkan diskon 30% untuk order pertama Anda." />
+  <title>La Indonesian – Catering Sehat Se-Indonesia | Pre-Launch</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar" role="banner">
+  <div class="container navbar__inner">
+    <a href="#" class="navbar__logo" aria-label="La Indonesian beranda">
+      <span class="logo-leaf" aria-hidden="true">🍃</span>
+      <span class="logo-text">La <strong>Indonesian</strong></span>
+    </a>
+    <nav class="navbar__links" aria-label="Navigasi utama">
+      <a href="#tentang">Tentang</a>
+      <a href="#menu-unggulan">Menu</a>
+      <a href="#harga">Harga</a>
+      <a href="#keunggulan">Keunggulan</a>
+      <a href="#testimoni">Testimoni</a>
+      <a href="#daftar" class="btn btn--outline-nav">Daftar Sekarang</a>
+    </nav>
+    <button class="hamburger" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="mobile-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-nav" id="mobile-nav" aria-hidden="true" role="navigation" aria-label="Menu mobile">
+    <a href="#tentang">Tentang</a>
+    <a href="#menu-unggulan">Menu</a>
+    <a href="#harga">Harga</a>
+    <a href="#keunggulan">Keunggulan</a>
+    <a href="#testimoni">Testimoni</a>
+    <a href="#daftar" class="btn btn--primary">Daftar Sekarang</a>
+  </div>
+</header>
+
+<main>
+
+<!-- ===== HERO + LEAD FORM ===== -->
+<section class="hero" id="daftar" aria-label="Hero dan formulir pre-launch">
+  <div class="hero__decorations" aria-hidden="true">
+    <div class="deco deco--1"></div>
+    <div class="deco deco--2"></div>
+    <div class="deco deco--3"></div>
+    <div class="deco deco--leaf1">🌿</div>
+    <div class="deco deco--leaf2">🌾</div>
+  </div>
+
+  <div class="container hero__inner">
+
+    <!-- Copy kiri -->
+    <div class="hero__copy">
+      <span class="badge badge--launch" role="note">✨ Pre-Launch Eksklusif</span>
+      <h1 class="hero__title">
+        Makan Sehat,<br />
+        <em>Rasa Nusantara</em><br />
+        Sampai ke Pintumu
+      </h1>
+      <p class="hero__desc">
+        La Indonesian menghadirkan catering bergizi dengan cita rasa masakan Nusantara — segar, halal, dan dikirim ke seluruh penjuru Indonesia. Segera hadir!
+      </p>
+      <ul class="hero__pills" aria-label="Keunggulan singkat">
+        <li><span aria-hidden="true">🥗</span> 100% Bahan Segar</li>
+        <li><span aria-hidden="true">🚚</span> Kirim Se-Indonesia</li>
+        <li><span aria-hidden="true">✅</span> Halal Bersertifikat</li>
+        <li><span aria-hidden="true">👨‍🍳</span> Chef Profesional</li>
+      </ul>
+
+      <!-- Countdown timer -->
+      <div class="countdown" aria-label="Hitung mundur peluncuran">
+        <p class="countdown__label">Peluncuran dalam:</p>
+        <div class="countdown__boxes">
+          <div class="countdown__box"><span id="cd-days" aria-label="Hari">00</span><small>Hari</small></div>
+          <div class="countdown__sep" aria-hidden="true">:</div>
+          <div class="countdown__box"><span id="cd-hours" aria-label="Jam">00</span><small>Jam</small></div>
+          <div class="countdown__sep" aria-hidden="true">:</div>
+          <div class="countdown__box"><span id="cd-mins" aria-label="Menit">00</span><small>Menit</small></div>
+          <div class="countdown__sep" aria-hidden="true">:</div>
+          <div class="countdown__box"><span id="cd-secs" aria-label="Detik">00</span><small>Detik</small></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Form kanan -->
+    <div class="lead-card" role="complementary" aria-label="Formulir pendaftaran awal">
+      <div class="lead-card__head">
+        <p class="form-eyebrow">🎁 Jadilah yang Pertama!</p>
+        <h2 class="form-title">Daftar &amp; Dapatkan <span class="text-accent">Diskon 30%</span> untuk Order Pertama</h2>
+        <p class="form-note">Gratis · Tanpa kartu kredit · Batalkan kapan saja</p>
+      </div>
+
+      <form class="lead-form" id="leadForm" novalidate aria-label="Formulir registrasi pre-launch">
+        <div class="form-group">
+          <label for="fname">Nama Lengkap <span class="req" aria-hidden="true">*</span></label>
+          <input type="text" id="fname" name="name" placeholder="Contoh: Siti Rahayu" autocomplete="name" required aria-required="true" />
+          <span class="field-err" role="alert" aria-live="polite"></span>
+        </div>
+        <div class="form-group">
+          <label for="femail">Alamat Email <span class="req" aria-hidden="true">*</span></label>
+          <input type="email" id="femail" name="email" placeholder="kamu@email.com" autocomplete="email" required aria-required="true" />
+          <span class="field-err" role="alert" aria-live="polite"></span>
+        </div>
+        <div class="form-group">
+          <label for="fphone">Nomor WhatsApp <span class="req" aria-hidden="true">*</span></label>
+          <input type="tel" id="fphone" name="phone" placeholder="08xxxxxxxxxx" autocomplete="tel" required aria-required="true" />
+          <span class="field-err" role="alert" aria-live="polite"></span>
+        </div>
+        <div class="form-group">
+          <label for="fcity">Kota / Kabupaten <span class="req" aria-hidden="true">*</span></label>
+          <input type="text" id="fcity" name="city" placeholder="Contoh: Surabaya, Bali, Medan…" required aria-required="true" />
+          <span class="field-err" role="alert" aria-live="polite"></span>
+        </div>
+        <div class="form-group">
+          <label for="finterest">Saya tertarik untuk</label>
+          <select id="finterest" name="interest">
+            <option value="" disabled selected>Pilih kebutuhan Anda</option>
+            <option value="harian">Catering Harian – Individu / Keluarga</option>
+            <option value="kantor">Catering Kantor / Perusahaan</option>
+            <option value="acara">Catering Acara &amp; Event</option>
+            <option value="diet">Program Diet &amp; Gizi Khusus</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
+          <span class="btn-text">Daftar Gratis Sekarang 🚀</span>
+          <span class="btn-loading" hidden aria-hidden="true">Mengirim…</span>
+        </button>
+        <p class="form-privacy"><span aria-hidden="true">🔒</span> Data Anda aman. Kami tidak pernah melakukan spam.</p>
+      </form>
+
+      <!-- Success state -->
+      <div class="form-success" id="formSuccess" hidden role="status" aria-live="polite">
+        <div class="success-emoji" aria-hidden="true">🎉</div>
+        <h3>Pendaftaran Berhasil!</h3>
+        <p>Terima kasih, <strong id="successName"></strong>! Kami akan menghubungi Anda via WhatsApp &amp; Email sebelum peluncuran.</p>
+        <a href="https://wa.me/?text=La+Indonesian+Catering+Sehat+segera+hadir!+Yuk+daftar+dan+dapat+diskon+30%25" target="_blank" rel="noopener noreferrer" class="btn btn--whatsapp">
+          <span aria-hidden="true">📲</span> Ajak Temanmu via WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stats bar -->
+  <div class="stats-bar" aria-label="Statistik singkat La Indonesian">
+    <div class="container stats-bar__inner">
+      <div class="stat">
+        <div class="stat__row"><span class="stat__num" data-target="1240">0</span></div>
+        <span class="stat__lbl">Pendaftar Awal</span>
+      </div>
+      <div class="stat__div" aria-hidden="true"></div>
+      <div class="stat">
+        <div class="stat__row"><span class="stat__num" data-target="34">0</span><span class="stat__sfx">+</span></div>
+        <span class="stat__lbl">Kota Terjangkau</span>
+      </div>
+      <div class="stat__div" aria-hidden="true"></div>
+      <div class="stat">
+        <div class="stat__row"><span class="stat__num" data-target="98">0</span><span class="stat__sfx">%</span></div>
+        <span class="stat__lbl">Kepuasan Uji Coba</span>
+      </div>
+      <div class="stat__div" aria-hidden="true"></div>
+      <div class="stat">
+        <div class="stat__row"><span class="stat__num" data-target="50">0</span><span class="stat__sfx">+</span></div>
+        <span class="stat__lbl">Varian Menu</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PRICING ===== -->
+<section class="pricing" id="harga" aria-labelledby="pricing-title">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Paket Harga</span>
+      <h2 id="pricing-title" class="section-title">Pilih Paket yang<br /><em>Sesuai Kebutuhanmu</em></h2>
+      <p class="section-sub">Semua paket sudah termasuk konsultasi ahli gizi gratis. Harga berlaku saat peluncuran resmi.</p>
+    </div>
+
+    <!-- Toggle harian / bulanan -->
+    <div class="pricing-toggle" role="group" aria-label="Pilih siklus harga">
+      <button class="toggle-btn toggle-btn--active" id="toggleDaily" aria-pressed="true">Harian</button>
+      <button class="toggle-btn" id="toggleMonthly" aria-pressed="false">Bulanan <span class="toggle-save">Hemat 20%</span></button>
+    </div>
+
+    <div class="pricing-grid" role="list">
+
+      <!-- Paket Starter -->
+      <article class="pricing-card" role="listitem">
+        <div class="pricing-card__top">
+          <div class="pricing-card__icon" aria-hidden="true">🥗</div>
+          <h3 class="pricing-card__name">Starter</h3>
+          <p class="pricing-card__desc">Cocok untuk individu yang ingin mulai hidup sehat</p>
+          <div class="pricing-card__price">
+            <span class="price-currency">Rp</span>
+            <span class="price-amount" data-daily="35.000" data-monthly="840.000">35.000</span>
+            <span class="price-period" data-daily="/ hari" data-monthly="/ bulan">/&nbsp;hari</span>
+          </div>
+          <p class="price-equiv" data-daily="" data-monthly="Setara Rp 28.000/hari">
+          </p>
+        </div>
+        <ul class="pricing-card__features" aria-label="Fitur paket Starter">
+          <li><span class="feat-check" aria-hidden="true">✔</span> 1 porsi makan per hari</li>
+          <li><span class="feat-check" aria-hidden="true">✔</span> Pilih dari 20+ menu</li>
+          <li><span class="feat-check" aria-hidden="true">✔</span> Informasi nutrisi lengkap</li>
+          <li><span class="feat-check" aria-hidden="true">✔</span> Kemasan ramah lingkungan</li>
+          <li class="feat-disabled"><span class="feat-cross" aria-hidden="true">✗</span> Konsultasi gizi personal</li>
+          <li class="feat-disabled"><span class="feat-cross" aria-hidden="true">✗</span> Pengiriman prioritas</li>
+        </ul>
+        <a href="#daftar" class="btn btn--outline-pricing">Daftar & Klaim Diskon</a>
+      </article>
+
+      <!-- Paket Sehat (Popular) -->
+      <article class="pricing-card pricing-card--popular" role="listitem">
+        <div class="popular-badge" aria-label="Paket terpopuler">⭐ Paling Populer</div>
+        <div class="pricing-card__top">
+          <div class="pricing-card__icon" aria-hidden="true">🍱</div>
+          <h3 class="pricing-card__name">Sehat</h3>
+          <p class="pricing-card__desc">Untuk kamu yang serius menjaga pola makan setiap hari</p>
+          <div class="pricing-card__price">
+            <span class="price-currency">Rp</span>
+            <span class="price-amount" data-daily="65.000" data-monthly="1.560.000">65.000</span>
+            <span class="price-period" data-daily="/ hari" data-monthly="/ bulan">/&nbsp;hari</span>
+          </div>
+          <p class="price-equiv" data-daily="" data-monthly="Setara Rp 52.000/hari">
+          </p>
+        </div>
+        <ul class="pricing-card__features" aria-label="Fitur paket Sehat">
+          <li><span class="feat-check" aria-hidden="true">✔</span> 2 porsi makan per hari</li>
+          <li><span class="feat-check" aria-hidden="true">✔</span> Pilih dari 50+ menu</li>
+          <li><span class="feat-check" aria-hidden="true">✔</span> Informasi nutrisi lengkap</li>
+          <li><span class="feat-check" aria-hidden="true">✔</span> Kemasan ramah lingkungan</li>
+          <li><span class="feat-check" aria-hidden="true">✔</span> Konsultasi gizi personal (2×/bln)</li>
+          <li class="feat-disabled"><span class="feat-cross" aria-hidden="true">✗</span> Pengiriman prioritas</li>
+        </ul>
+        <a href="#daftar" class="btn btn--primary">Daftar & Klaim Diskon</a>
+      </article>
+
+      <!-- Paket Premium -->
+      <article class="pricing-card" role="listitem">
+        <div class="pricing-card__top">
+          <div class="pricing-card__icon" aria-hidden="true">👑</div>
+          <h3 class="pricing-card__name">Premium</h3>
+          <p class="pricing-card__desc">Pengalaman catering sehat terlengkap tanpa kompromi</p>
+          <div class="pricing-card__price">
+            <span class="price-currency">Rp</span>
+            <span class="price-amount" data-daily="110.000" data-monthly="2.640.000">110.000</span>
+            <span class="price-period" data-daily="/ hari" data-monthly="/ bulan">/&nbsp;hari</span>
+          </div>
+          <p class="price-equiv" data-daily="" data-monthly="Setara Rp 88.000/hari">
+          </p>
+        </div>
+        <ul class="pricing-card__features" aria-label="Fitur paket Premium">
+          <li><span class="feat-check" aria-hidden="true">✔</span> 3 porsi makan per hari</li>
+          <li><span class="feat-check" aria-hidden="true">✔</span> Pilih dari semua menu</li>
+          <li><span class="feat-check" aria-hidden="true">✔</span> Informasi nutrisi lengkap</li>
+          <li><span class="feat-check" aria-hidden="true">✔</span> Kemasan ramah lingkungan</li>
+          <li><span class="feat-check" aria-hidden="true">✔</span> Konsultasi gizi personal (tak terbatas)</li>
+          <li><span class="feat-check" aria-hidden="true">✔</span> Pengiriman prioritas</li>
+        </ul>
+        <a href="#daftar" class="btn btn--outline-pricing">Daftar & Klaim Diskon</a>
+      </article>
+
+    </div><!-- /pricing-grid -->
+
+    <!-- Paket Kantor -->
+    <div class="pricing-enterprise">
+      <div class="pricing-enterprise__icon" aria-hidden="true">🏢</div>
+      <div class="pricing-enterprise__text">
+        <h3>Paket Kantor &amp; Event</h3>
+        <p>Butuh catering untuk tim, acara, atau perusahaan? Kami menyediakan paket khusus mulai dari 10 porsi dengan harga lebih hemat dan layanan dedicated account manager.</p>
+      </div>
+      <a href="https://wa.me/6281234567890?text=Halo+La+Indonesian%2C+saya+ingin+info+Paket+Kantor" target="_blank" rel="noopener noreferrer" class="btn btn--primary">Hubungi Kami 💬</a>
+    </div>
+
+    <p class="pricing-disclaimer">* Harga belum termasuk ongkos kirim. Diskon 30% untuk order pertama berlaku bagi pendaftar pre-launch. Harga dapat berubah saat peluncuran resmi.</p>
+  </div>
+</section>
+
+<!-- ===== TENTANG ===== -->
+<section class="about" id="tentang" aria-labelledby="about-title">
+  <div class="container about__inner">
+    <div class="about__visual" aria-hidden="true">
+      <div class="about__img-wrap" aria-hidden="true">
+        <div class="about__img-bg"></div>
+        <div class="about__img-front">
+          <span class="big-emoji">🍛</span>
+        </div>
+      </div>
+      <div class="about__badge-float">
+        <span>🌿</span>
+        <div>
+          <strong>Farm-to-Table</strong>
+          <small>Bahan lokal segar</small>
+        </div>
+      </div>
+    </div>
+    <div class="about__content">
+      <span class="section-label">Tentang La Indonesian</span>
+      <h2 id="about-title" class="section-title">Dimasak dengan Cinta,<br /><em>Dikirim dengan Amanah</em></h2>
+      <p>La Indonesian lahir dari kepedulian terhadap pola makan masyarakat Indonesia yang sering tergoda makanan cepat saji. Kami percaya makanan sehat tidak harus membosankan — dengan kekayaan rempah Nusantara, setiap hidangan kami bergizi, lezat, dan terjangkau.</p>
+      <p>Beroperasi dari dapur tersertifikasi dan bermitra langsung dengan petani lokal, semua menu dibuat segar setiap hari dan dikirim tepat waktu ke seluruh Indonesia.</p>
+      <ul class="about__checklist">
+        <li><span class="chk" aria-hidden="true">✔</span> Dapur bersertifikat BPOM &amp; Halal MUI</li>
+        <li><span class="chk" aria-hidden="true">✔</span> Bahan baku langsung dari petani lokal</li>
+        <li><span class="chk" aria-hidden="true">✔</span> Dikemas higienis &amp; ramah lingkungan</li>
+        <li><span class="chk" aria-hidden="true">✔</span> Konsultasi ahli gizi gratis untuk pelanggan</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MENU UNGGULAN ===== -->
+<section class="menu-section" id="menu-unggulan" aria-labelledby="menu-title">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Menu Unggulan</span>
+      <h2 id="menu-title" class="section-title">Rasa Nusantara,<br /><em>Nutrisi Sempurna</em></h2>
+      <p class="section-sub">Setiap menu dirancang oleh chef profesional bersama ahli gizi bersertifikat.</p>
+    </div>
+    <div class="menu-grid" role="list">
+      <article class="menu-card" role="listitem">
+        <div class="menu-card__emoji" aria-hidden="true">🍱</div>
+        <div class="menu-card__body">
+          <span class="menu-tag">⭐ Populer</span>
+          <h3>Nasi Box Sehat Nusantara</h3>
+          <p>Nasi merah pulen dengan lauk pilihan berbumbu rempah — rendah kalori, tinggi protein.</p>
+          <div class="menu-card__meta">
+            <span>🔥 450 kkal</span>
+            <span>💪 28g protein</span>
+          </div>
+        </div>
+      </article>
+      <article class="menu-card menu-card--green" role="listitem">
+        <div class="menu-card__emoji" aria-hidden="true">🥗</div>
+        <div class="menu-card__body">
+          <span class="menu-tag menu-tag--green">🌱 Vegan</span>
+          <h3>Gado-Gado Sehat Bowl</h3>
+          <p>Sayuran segar dengan saus kacang tanpa MSG — kaya serat, vitamin, dan mineral.</p>
+          <div class="menu-card__meta">
+            <span>🔥 320 kkal</span>
+            <span>💪 14g protein</span>
+          </div>
+        </div>
+      </article>
+      <article class="menu-card menu-card--yellow" role="listitem">
+        <div class="menu-card__emoji" aria-hidden="true">🍲</div>
+        <div class="menu-card__body">
+          <span class="menu-tag menu-tag--yellow">🥦 Diet Friendly</span>
+          <h3>Soto Ayam Bening Diet</h3>
+          <p>Kaldu bening tanpa santan, ayam kampung organik, kunyit segar dan rempah pilihan.</p>
+          <div class="menu-card__meta">
+            <span>🔥 280 kkal</span>
+            <span>💪 32g protein</span>
+          </div>
+        </div>
+      </article>
+      <article class="menu-card menu-card--brown" role="listitem">
+        <div class="menu-card__emoji" aria-hidden="true">🍗</div>
+        <div class="menu-card__body">
+          <span class="menu-tag menu-tag--brown">🏋️ High Protein</span>
+          <h3>Pecel Ayam Herbal</h3>
+          <p>Ayam panggang bumbu herbal dengan sambal pecel khas Jawa dan lalapan segar.</p>
+          <div class="menu-card__meta">
+            <span>🔥 510 kkal</span>
+            <span>💪 42g protein</span>
+          </div>
+        </div>
+      </article>
+    </div>
+    <p class="menu-more-note">+ 46 menu lainnya akan tersedia saat peluncuran resmi</p>
+  </div>
+</section>
+
+<!-- ===== KEUNGGULAN ===== -->
+<section class="features" id="keunggulan" aria-labelledby="feat-title">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Mengapa La Indonesian?</span>
+      <h2 id="feat-title" class="section-title">Lebih dari Sekadar<br /><em>Catering Biasa</em></h2>
+    </div>
+    <div class="features-grid" role="list">
+      <div class="feat-card" role="listitem">
+        <div class="feat-card__icon" aria-hidden="true">🥬</div>
+        <h3>Bahan 100% Segar</h3>
+        <p>Semua bahan dipilih segar setiap pagi dari pasar lokal dan mitra petani binaan kami.</p>
+      </div>
+      <div class="feat-card" role="listitem">
+        <div class="feat-card__icon" aria-hidden="true">🚚</div>
+        <h3>Jangkauan Se-Indonesia</h3>
+        <p>Pengiriman ke lebih dari 34 provinsi di Indonesia dengan kemasan insulasi khusus.</p>
+      </div>
+      <div class="feat-card" role="listitem">
+        <div class="feat-card__icon" aria-hidden="true">🏅</div>
+        <h3>Halal &amp; Tersertifikasi</h3>
+        <p>Seluruh proses produksi telah mendapat sertifikasi Halal MUI dan standar BPOM.</p>
+      </div>
+      <div class="feat-card" role="listitem">
+        <div class="feat-card__icon" aria-hidden="true">🧑‍⚕️</div>
+        <h3>Dikurasi Ahli Gizi</h3>
+        <p>Setiap menu melewati review ahli gizi bersertifikat untuk memastikan keseimbangan nutrisi.</p>
+      </div>
+      <div class="feat-card" role="listitem">
+        <div class="feat-card__icon" aria-hidden="true">📦</div>
+        <h3>Kemasan Ramah Lingkungan</h3>
+        <p>Menggunakan bahan daur ulang &amp; biodegradable untuk mengurangi jejak karbon.</p>
+      </div>
+      <div class="feat-card" role="listitem">
+        <div class="feat-card__icon" aria-hidden="true">💬</div>
+        <h3>Konsultasi Gizi Gratis</h3>
+        <p>Pelanggan mendapat akses konsultasi menu dengan ahli gizi kami tanpa biaya tambahan.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CARA KERJA ===== -->
+<section class="how-it-works" aria-labelledby="how-title">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Cara Kerja</span>
+      <h2 id="how-title" class="section-title">Mudah &amp; Praktis<br /><em>dalam 3 Langkah</em></h2>
+    </div>
+    <div class="steps" role="list">
+      <div class="step" role="listitem">
+        <div class="step__num" aria-hidden="true">1</div>
+        <div class="step__icon" aria-hidden="true">📋</div>
+        <h3>Pilih Menu</h3>
+        <p>Pilih dari 50+ menu bergizi yang sesuai kebutuhan kalori dan selera Anda.</p>
+      </div>
+      <div class="step__arrow" aria-hidden="true">→</div>
+      <div class="step" role="listitem">
+        <div class="step__num" aria-hidden="true">2</div>
+        <div class="step__icon" aria-hidden="true">👨‍🍳</div>
+        <h3>Dimasak Segar</h3>
+        <p>Chef kami memasak pesanan Anda segar di pagi hari dengan bahan berkualitas.</p>
+      </div>
+      <div class="step__arrow" aria-hidden="true">→</div>
+      <div class="step" role="listitem">
+        <div class="step__num" aria-hidden="true">3</div>
+        <div class="step__icon" aria-hidden="true">🏠</div>
+        <h3>Dikirim ke Pintu</h3>
+        <p>Pesanan tiba tepat waktu, dikemas rapi dan terjaga suhunya sampai di tangan Anda.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONI ===== -->
+<section class="testimonials" id="testimoni" aria-labelledby="testi-title">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Kata Mereka</span>
+      <h2 id="testi-title" class="section-title">Dipercaya Sejak<br /><em>Uji Coba Pertama</em></h2>
+      <p class="section-sub">Testimoni dari peserta beta testing La Indonesian di 5 kota besar.</p>
+    </div>
+    <div class="testi-grid" role="list">
+      <blockquote class="testi-card" role="listitem">
+        <div class="testi-stars" aria-label="5 dari 5 bintang">★★★★★</div>
+        <p>"Akhirnya ada catering sehat yang benar-benar enak! Nasinya pulen, lauknya bumbu banget. Cocok banget buat saya yang lagi program diet."</p>
+        <footer>
+          <div class="testi-avatar" aria-hidden="true">SR</div>
+          <div>
+            <strong>Siti Rahayu</strong>
+            <small>Jakarta Selatan · Peserta Beta</small>
+          </div>
+        </footer>
+      </blockquote>
+      <blockquote class="testi-card" role="listitem">
+        <div class="testi-stars" aria-label="5 dari 5 bintang">★★★★★</div>
+        <p>"Saya pesan untuk kantor 20 orang. Pengirimannya tepat waktu, packaging rapi, dan tim kami semua suka. Pasti akan lanjut saat launch!"</p>
+        <footer>
+          <div class="testi-avatar testi-avatar--brown" aria-hidden="true">BP</div>
+          <div>
+            <strong>Budi Prasetyo</strong>
+            <small>Surabaya · Manager HRD</small>
+          </div>
+        </footer>
+      </blockquote>
+      <blockquote class="testi-card" role="listitem">
+        <div class="testi-stars" aria-label="5 dari 5 bintang">★★★★★</div>
+        <p>"Gado-gado bowl-nya juara! Sausnya kental, sayurnya fresh, dan tidak ada MSG sama sekali. Anak-anak saya pun doyan banget."</p>
+        <footer>
+          <div class="testi-avatar testi-avatar--yellow" aria-hidden="true">DW</div>
+          <div>
+            <strong>Dewi Wulandari</strong>
+            <small>Bandung · Ibu Rumah Tangga</small>
+          </div>
+        </footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA BANNER ===== -->
+<section class="cta-banner" aria-labelledby="cta-title">
+  <div class="cta-banner__deco" aria-hidden="true">
+    <span>🍃</span><span>🌾</span><span>🥗</span>
+  </div>
+  <div class="container cta-banner__inner">
+    <div class="cta-banner__text">
+      <h2 id="cta-title">Jangan Lewatkan Diskon 30% untuk Order Pertama!</h2>
+      <p>Kuota early bird terbatas. Daftar sekarang sebelum kehabisan.</p>
+    </div>
+    <a href="#daftar" class="btn btn--primary btn--lg">Daftar Gratis Sekarang 🚀</a>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="faq" aria-labelledby="faq-title">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">FAQ</span>
+      <h2 id="faq-title" class="section-title">Pertanyaan<br /><em>yang Sering Diajukan</em></h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Kapan La Indonesian akan resmi diluncurkan?</summary>
+        <p>Kami menargetkan peluncuran resmi dalam waktu dekat. Pendaftar awal akan mendapat notifikasi via email dan WhatsApp sebelum tanggal peluncuran.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Apakah pengiriman tersedia di kota saya?</summary>
+        <p>Saat ini kami sedang memperluas jangkauan ke seluruh 34 provinsi Indonesia. Masukkan kota Anda di formulir pendaftaran dan kami akan konfirmasi ketersediaannya.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Apakah menu La Indonesian sudah mendapat sertifikasi Halal?</summary>
+        <p>Ya. Seluruh produk La Indonesian telah mendapat sertifikasi Halal dari MUI dan memenuhi standar BPOM untuk keamanan pangan.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Bagaimana cara mendapatkan diskon 30% untuk order pertama?</summary>
+        <p>Cukup daftarkan diri Anda melalui formulir di halaman ini. Kode diskon eksklusif akan dikirim ke email dan WhatsApp Anda menjelang peluncuran.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Apakah ada pilihan menu untuk program diet khusus?</summary>
+        <p>Tentu! Kami menyediakan pilihan menu untuk diet rendah kalori, tinggi protein, diabetes-friendly, dan vegan. Konsultasikan kebutuhan Anda dengan tim ahli gizi kami.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer" role="contentinfo">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <a href="#" class="navbar__logo" aria-label="La Indonesian beranda">
+        <span class="logo-leaf" aria-hidden="true">🍃</span>
+        <span class="logo-text">La <strong>Indonesian</strong></span>
+      </a>
+      <p>Catering Sehat untuk seluruh wilayah Indonesia. Bergizi, lezat, dan terjangkau.</p>
+      <div class="footer__social" aria-label="Media sosial La Indonesian">
+        <a href="#" aria-label="Instagram La Indonesian" rel="noopener">📸 Instagram</a>
+        <a href="#" aria-label="TikTok La Indonesian" rel="noopener">🎵 TikTok</a>
+        <a href="#" aria-label="WhatsApp La Indonesian" rel="noopener">💬 WhatsApp</a>
+      </div>
+    </div>
+    <div class="footer__links">
+      <h4>Navigasi</h4>
+      <ul>
+        <li><a href="#tentang">Tentang Kami</a></li>
+        <li><a href="#menu-unggulan">Menu Unggulan</a></li>
+        <li><a href="#keunggulan">Keunggulan</a></li>
+        <li><a href="#testimoni">Testimoni</a></li>
+      </ul>
+    </div>
+    <div class="footer__links">
+      <h4>Hubungi Kami</h4>
+      <ul>
+        <li><a href="mailto:hello@laindonesian.id">hello@laindonesian.id</a></li>
+        <li><a href="https://wa.me/6281234567890" rel="noopener">+62 812-3456-7890</a></li>
+        <li class="footer__plain-item">Segera Hadir di Seluruh Indonesia</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="container">
+      <p>&copy; 2025 La Indonesian. Semua hak dilindungi undang-undang.</p>
+      <div>
+        <a href="#">Kebijakan Privasi</a>
+        <a href="#">Syarat &amp; Ketentuan</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
